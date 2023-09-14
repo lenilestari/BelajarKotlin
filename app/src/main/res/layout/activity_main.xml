@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panjang"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_Panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Panjang"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:minHeight="50dp" />
+
+    <TextView
+        android:id="@+id/text_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lebar"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_Lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Lebar"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:minHeight="50dp" />
+
+    <TextView
+        android:id="@+id/text_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinggi"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_Tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tinggi"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:minHeight="50dp" />
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/text_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:hint="Hasil"/>
+
+
+</LinearLayout>
