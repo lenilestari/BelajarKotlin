@@ -17,7 +17,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Belajar pindah activity" />
@@ -29,13 +29,13 @@
             android:layout_weight="1"
             android:text="Pindah Activity" />
 
-        <TextView
-            android:id="@+id/textView3"
+
+        <Button
+            android:id="@+id/btn_moveActivityData"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Update" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/move_with_object"/>
 
 
     </LinearLayout>
