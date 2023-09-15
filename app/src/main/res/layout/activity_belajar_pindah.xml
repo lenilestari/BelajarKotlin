@@ -37,6 +37,13 @@
             android:layout_marginTop="15dp"
             android:text="@string/move_with_object"/>
 
+        <Button
+            android:id="@+id/btn_dataParcelable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/move_with_object"/>
+
 
     </LinearLayout>
 

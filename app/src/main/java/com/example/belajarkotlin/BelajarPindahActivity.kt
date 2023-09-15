@@ -17,6 +17,9 @@ class BelajarPindahActivity : AppCompatActivity(), View.OnClickListener {
         val moveActivittyWithData : Button = findViewById(R.id.btn_moveActivityData)
         moveActivittyWithData.setOnClickListener(this)
 
+        val dataParcelableMove : Button = findViewById(R.id.btn_dataParcelable)
+        dataParcelableMove.setOnClickListener(this)
+
     }
 
     override fun onClick(view: View?) {
@@ -35,6 +38,20 @@ class BelajarPindahActivity : AppCompatActivity(), View.OnClickListener {
                 moveDataWithIntent.putExtra(Data.EXTRA_AGE, 20)
                 startActivity(moveDataWithIntent)
 
+            }
+            R.id.btn_dataParcelable -> {
+                val dataClass = DataClass (
+
+                    "Leni Lestari",
+                    20,
+                    "Tlogoadi",
+                    "Yogyakarta"
+
+                )
+
+                val moveDataClass = Intent (this@BelajarPindahActivity, MoveDataParcelable::class.java)
+                moveDataClass.putExtra(MoveDataParcelable.EXTRA_DATACLASS, dataClass)
+                startActivity(moveDataClass)
             }
         }
     }
